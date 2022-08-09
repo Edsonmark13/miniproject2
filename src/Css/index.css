@@ -1,0 +1,200 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+.ant-input{
+  border-radius: 5px
+}
+
+.nav-link{
+  margin-left: 10px;
+  font-size: 14px;
+  border-radius: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center
+}
+.nav-link:hover{
+  color: #008000a0;
+  background-color: rgb(234, 234, 234)
+}
+
+.category-container{
+  border: 1px solid rgb(241, 241, 241);
+  border-radius: 5px;
+  padding: 10px;
+  cursor: pointer;
+  color: #008000a0;
+  text-align: center;
+  margin: 5px
+}
+.category-container:hover{
+  border-color: #008000a0
+}
+.category-container img{
+  width: 70px;
+}
+
+.product-container{
+  border-radius: 5px;
+  border: 1px solid rgb(241, 241, 241);
+  cursor: pointer
+}
+.product-container img{
+  border-radius: 5px 5px 0 0
+}
+.product-container:hover{
+  border-color: #008000a0
+}
+.product-container:hover .product-icon-cart{
+  color: white;
+  background-color: rgb(1, 89, 1);
+  opacity: .9
+}
+.product-container:hover .product-icon-cart-added{
+  opacity: .9
+}
+.product-icon-cart{
+  color: white;
+  background-color: rgb(2, 139, 2);
+  border-radius: 5px;
+  border: none;
+  opacity: 0;
+  box-shadow: -7px 2px 20px -6px rgba(0,0,0,0.61);
+  -webkit-box-shadow: -7px 2px 20px -6px rgba(0,0,0,0.61);
+  -moz-box-shadow: -7px 2px 20px -6px rgba(0,0,0,0.61);
+}
+.product-icon-cart:hover{
+  color: white;
+  background-color: rgb(1, 89, 1);
+  opacity: .9
+}
+.product-icon-cart:focus{
+  color: white;
+  background-color: rgb(1, 89, 1);
+}
+.product-icon-cart-added{
+  color: rgb(2, 139, 2);
+  background-color: transparent;
+  border-radius: 5px;
+  border: none;
+  opacity: 0;
+  box-shadow: -7px 2px 20px -6px rgba(0,0,0,0.61);
+  -webkit-box-shadow: -7px 2px 20px -6px rgba(0,0,0,0.61);
+  -moz-box-shadow: -7px 2px 20px -6px rgba(0,0,0,0.61);
+}
+.product-icon-cart-added:hover{
+  color: rgb(2, 139, 2);
+  background-color: transparent;
+  border-radius: 5px;
+  border: none;
+  box-shadow: -7px 2px 20px -6px rgba(0,0,0,0.61);
+  -webkit-box-shadow: -7px 2px 20px -6px rgba(0,0,0,0.61);
+  -moz-box-shadow: -7px 2px 20px -6px rgba(0,0,0,0.61);
+}
+.product-icon-cart-added:focus{
+  color: rgb(2, 139, 2);
+  background-color: transparent;
+  border-radius: 5px;
+  border: none;
+  box-shadow: -7px 2px 20px -6px rgba(0,0,0,0.61);
+  -webkit-box-shadow: -7px 2px 20px -6px rgba(0,0,0,0.61);
+  -moz-box-shadow: -7px 2px 20px -6px rgba(0,0,0,0.61);
+}
+.cart-icon{
+  margin-right: 10px;
+  font-size: 15px
+}
+
+.shop-button{
+  color: white;
+  border-radius: 30px;
+  margin: 10px;
+  margin-left: 30px;
+  padding-left: 30px;
+  padding-right: 30px;
+  background-color: #099009;
+  border: none
+}
+.shop-button:hover{
+  color: white;
+  border-radius: 30px;
+  margin: 10px;
+  margin-left: 30px;
+  padding-left: 30px;
+  padding-right: 30px;
+  background-color: #055b05;
+  border: none
+}
+.shop-button:focus{
+  color: white;
+  border-radius: 30px;
+  margin: 10px;
+  margin-left: 30px;
+  padding-left: 30px;
+  padding-right: 30px;
+  background-color: #099009;
+  border: none
+}
+
+.best-offer{
+  padding: 15px
+}
+.best-offer img{
+  box-shadow: -7px 2px 20px -6px rgba(0,0,0,0.61);
+  -webkit-box-shadow: -7px 2px 20px -6px rgba(0,0,0,0.61);
+  -moz-box-shadow: -7px 2px 20px -6px rgba(0,0,0,0.61);
+}
+
+.quantity-editor button{
+  height: 30px;
+  width: 30px;
+  border-radius: 5px;
+  border: 1px solid rgb(169, 169, 169);
+  background-color: transparent;
+}
+.quantity-editor .minus:hover{
+  color: white;
+  background-color: #099009;
+  border: 1px solid #099009;
+}
+.quantity-editor .plus:hover{
+  color: white;
+  background-color: #099009;
+  border: 1px solid #099009;
+}
+.quantity-editor button:focus{
+  color: black;
+  border-radius: 5px;
+  border: 1px solid rgb(169, 169, 169);
+  background-color: transparent;
+}
+
+.sizes button{
+  border-radius: 30px;
+  background-color: transparent;
+  border: 1px solid rgb(169, 169, 169);
+  margin-right: 5px;
+  margin-top: 7px;
+}
+.sizes button:hover{
+  color: white;
+  background-color: #099009;
+  border: 1px solid #099009;
+}
+.sizes button:focus{
+  color: black;
+  background-color: transparent;
+  border: 1px solid rgb(169, 169, 169);
+}
